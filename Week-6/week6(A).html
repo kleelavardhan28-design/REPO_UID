@@ -1,0 +1,130 @@
+<html>
+<head>
+<title>My E-commerce Website</title>
+<style>
+body{
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+background-color: black;
+}
+.container{
+display: grid;
+grid-template-rows: auto auto 1fr auto;
+grid-template-columns: 200px 1fr;
+grid-template-areas: 
+"header header"
+"sale sale"
+"sidebar main"
+"footer footer";
+gap: 10px;
+padding: 10px;
+}
+.header{
+grid-area: header;
+background-color:#2563EB;
+padding: 10px;
+text-align: center;
+}
+.sale{
+grid-area: sale;
+background-color: gray;
+padding: 10px;
+text-align: center;
+}
+.sidebar{
+grid-area: sidebar;
+background-color:#F1F5F9 ;
+padding: 10px;
+}
+.main{
+grid-area: main;
+background-color: gray;
+padding: 10px;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 10px;
+}
+.footer{
+grid-area: footer;
+background-color: gray;
+padding: 10px;
+text-align: center;
+}
+.product{
+background-color:#F7F7F7;
+padding: 10px;
+border-radius: 5px;
+text-align: center;
+}
+.product-image{
+width: 200px;
+height: 200px;
+}
+.button{
+background-color: #F59E0B;
+color: black;
+border: 2px solid white;
+padding: 10px 20px;
+border-radius: 5px;
+}
+.button:hover{
+background-color: lightslategray;
+color: black;
+border: 2px solid black;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="header">
+<h1>Weapon's Store</h1>
+</div>
+<div class="sale">
+<p>Special Sale!</p>
+</div>
+<div class="sidebar">
+<h2>Categories</h2>
+<ul>
+<li>Snipers</li>
+<li>SMG's</li>
+<li>Rifels</li>
+<li>Shotgun</li>
+</ul>
+</div>
+<div class="main">
+<div class="product">
+<img class="product-image"
+src="C:\Users\kaval\Downloads\awm.jpg" alt="AWM">
+<h3>AWM(Sniper)</h3>
+<p>Price: $299.99</p>
+<button class="button">Add to Cart</button>
+</div>
+<div class="product">
+<img class="product-image"
+src="C:\Users\kaval\Downloads\smg.jpg" alt="SMG's">
+<h3>SMG's(Shot range)</h3>
+<p>Price: $499.99</p>
+<button class="button">Add to Cart</button>
+</div>
+<div class="product">
+<img class="product-image"
+src="C:\Users\kaval\Downloads\Rifels.jpg" alt="Rifels">
+<h3>Rifels(Mid range)</h3>
+<p>Price: $399.99</p>
+<button class="button">Add to Cart</button>
+</div>
+<div class="product">
+<img class="product-image"
+src="C:\Users\kaval\Downloads\Shotgun.jpg" alt="Shot gun's">
+<h3>Board Game</h3>
+<p>Price: $249.99</p>
+<button class="button">Add to Cart</button>
+</div>
+</div>
+<div class="footer">
+<p>&copy; copyright Weapons Store Website. All rights reserved.</p>
+</div>
+</div>
+</body>
+</html

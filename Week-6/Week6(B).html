@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TOYS 4 TOYS</title>
+<style>
+body{
+margin:0;
+font-family:Arial;
+color:#fff;
+background:url("backgroundimages.jpg") center/cover fixed no-repeat;
+}
+body::before{
+content:"";
+position:fixed;
+inset:0;
+background:rgba(0,0,0,.75);
+z-index:-1;
+}
+.container{
+display:grid;
+grid-template:
+"header header" auto
+"sale sale" auto
+"sidebar main" 1fr
+"footer footer" auto /220px 1fr;
+gap:15px;
+padding:15px;
+}
+.header,.sale,.sidebar,.main,.footer{
+background:rgba(40,40,40,.65);
+border-radius:12px;
+padding:15px;
+box-shadow:0 0 15px #000;
+}
+.header{grid-area:header;text-align:center;font-size:28px;letter-spacing:3px;}
+.sale{grid-area:sale;overflow:hidden;whitespace:nowrap;height:40px;position:relative;}
+.sale p{
+position:absolute;
+color:#00ffd5;
+font-size:20px;
+animation:move 10s linear infinite;
+}
+@keyframes move{
+from{left:-100%;}
+to{left:100%;}
+}
+.sidebar{grid-area:sidebar}
+.sidebar ul{list-style:none;padding:0}
+.sidebar li{margin:15px 0}
+.sidebar a{
+color:#fff;
+text-decoration:none;
+font-size:18px;
+transition:.3s;
+}
+.sidebar a:hover{color:#00ffd5;padding-left:8px}
+.main{grid-area:main}
+iframe{width:100%;height:520px;border:0;background:rgba(0,0,0,.5);borderradius:10px}
+.footer{grid-area:footer;text-align:center;font-size:14px;opacity:.85}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="header">Weapon Store</div>
+<div class="sale">
+<p>🔥 SPECIAL SALE – UP TO 50% OFF ON ALL TOYS 🔥</p>
+</div>
+<div class="sidebar">
+<h2>Categories</h2>
+<ul>
+<li><a href="Snipers.html"target="contentFrame">sniper</a></li>
+<li><a href="Smg's.html" target="contentFrame">smg</a></li>
+<li><a href="Rifels.html" target="contentFrame">Rifele</a></li>
+<li><a href="shotgun.html" target="contentFrame">Shot gun</a></li>
+</ul>
+</div>
+<div class="main">
+<iframe name="contentFrame"></iframe>
+</div>
+<div class="footer">
+ Weapons Website
+</div>
+</div>
+</body>
+</html>
+
+
+1.
+<!DOCTYPE html>
+<html>
+<head>
+<title>Smg's</title>
+<style>
+body{
+font-family: Arial, sans-serif;
+margin:0;
+padding:20px;
+background-color: darkolivegreen;
+}
+.container{
+display:grid;
+grid-template-columns: 1fr 1fr; /* 2 columns */
+grid-template-rows: auto auto; /* 2 rows */
+gap:20px;
+}
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+text-align:center;
+}
+.card-img{
+width:200px;
+height:200px;
+border-radius:10px;
+margin-bottom:10px;
+}
+.price{
+font-size:18px;
+color:green;
+margin-top:10px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="card">
+<img class="card-img"
+src="C:\Users\kaval\Downloads\smg.jpg" alt="SMG's">
+<h2>UMP</h2>
+<p class="price">$299.99</p>
+</div>
+<div class="card">
+<img class="card-img"
+src= "C:\Users\kaval\Downloads\smg1.jpg"alt="SMG'S">
+<h2>MP40</h2>
+<p class="price">$349.99</p>
+</div>
+<div class="card">
+<img class="card-img"
+src="C:\Users\kaval\Downloads\smg2.jpeg" alt="SMG's">
+<h2>MP5</h2>
+<p class="price">$49.99</p>
+</div>
+<div class="card">
+<img class="card-img"
+src="C:\Users\kaval\Downloads\smg3.jpg" alt="SMG's">
+<h2>P90</h2>
+<p class="price">$79.99</p>
+</div>
+</div>
+</body>
+</html>
+
+2.
+<!DOCTYPE html>
+<html>
+<head>
+<title>Snipers</title>
+<style>
+body{
+font-family: Arial, sans-serif;
+margin:0;
+padding:20px;
+background-color: steelblue;
+}
+.container{
+display:grid;
+grid-template-columns: 1fr 1fr; /* 2 columns */
+grid-template-rows: auto auto; /* 2 rows */
+gap:20px;
+}
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+text-align:center;
+}
+.card-img{
+width:200px;
+height:200px;
+border-radius:10px;
+margin-bottom:10px;
+}
+.price{
+font-size:18px;
+color:goldenrod;
+margin-top:10px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="card">
+<img class="card-img"
+src="C:\Users\kaval\Downloads\awm.jpg" alt="Snipers">
+<h2>AWM</h2>
+<p>More distance&damage</p>
+<p class="price">$299.99</p>
+</div>
+<div class="card">
+<img class="card-img"
+src= "C:\Users\kaval\Downloads\Awm1.jpg"alt="Snipers">
+<h2>M82B</h2>
+<p>Lessdamge And penetrates through harder surfaces</p>
+<p class="price">$345.99</p>
+</div>
+<div class="card">
+<img class="card-img"
+src="C:\Users\kaval\Downloads\Awm2.jpg" alt="Snipers">
+<h2>VSK94</h2>
+<p>less damage.</p>
+<p class="price">$1493.99</p>
+</div>
+<div class="card">
+<img class="card-img"
+src="C:\Users\kaval\Downloads\Awm3.jpg" alt="Snipers">
+<h2>M24</h2>
+<p>Good one</p>
+<p class="price">$99.99</p>
+</div>
+</div>
+</body>
+</html>
+
+3.
+<!DOCTYPE html>
+<html>
+<head>
+<title>Smg's</title>
+<style>
+body{
+font-family: Arial, sans-serif;
+margin:0;
+padding:20px;
+background-color: grey;
+}
+.container{
+display:grid;
+grid-template-columns: 1fr 1fr; /* 2 columns */
+grid-template-rows: auto auto; /* 2 rows */
+gap:20px;
+}
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+text-align:center;
+}
+.card-img{
+width:200px;
+height:200px;
+border-radius:10px;
+margin-bottom:10px;
+}
+.price{
+font-size:18px;
+color:green;
+margin-top:10px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="card">
+<img class="card-img"
+src="C:\Users\kaval\Downloads\Rifels.jpg" alt="Rifels">
+<h2>Rifle</h2>
+<p class="price">$299.99</p>
+</div>
+<div class="card">
+<img class="card-img"
+src= "C:\Users\kaval\Downloads\rif1.jpg"alt="Rifels">
+<h2>AC80</h2>
+<p class="price">$349.99</p>
+</div>
+<div class="card">
+<img class="card-img"
+src= "C:\Users\kaval\Downloads\rif2.jpg"alt="Rifels">
+<h2>Woodpecker</h2>
+<p class="price">$49.99</p>
+</div>
+<div class="card">
+<img class="card-img"
+src="C:\Users\kaval\Downloads\rif3.jpg" alt="Rifels">
+<h2>M4A1</h2>
+<p class="price">$79.99</p>
+</div>
+</div>
+</body>
+</html>
+
+4.
+<!DOCTYPE html>
+<html>
+<head>
+<title>Smg's</title>
+<style>
+body{
+font-family: Arial, sans-serif;
+margin:0;
+padding:20px;
+background-color: grey;
+}
+.container{
+display:grid;
+grid-template-columns: 1fr 1fr; /* 2 columns */
+grid-template-rows: auto auto; /* 2 rows */
+gap:20px;
+}
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+text-align:center;
+}
+.card-img{
+width:200px;
+height:200px;
+border-radius:10px;
+margin-bottom:10px;
+}
+.price{
+font-size:18px;
+color:green;
+margin-top:10px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="card">
+<img class="card-img"
+src= "C:\Users\kaval\Downloads\Shotgun.jpg"alt="Shot gun">
+<h2>M18873</h2>
+<p class="price">$299.99</p>
+</div>
+<div class="card">
+<img class="card-img"
+src="C:\Users\kaval\Downloads\shtgun1.jpg" alt="Shot gun">
+<h2>M1014</h2>
+<p class="price">$349.99</p>
+</div>
+<div class="card">
+<img class="card-img"
+src= "C:\Users\kaval\Downloads\shtgun2.jpg" alt="Shot gun">
+<h2>MAG-7</h2>
+<p class="price">$49.99</p>
+</div>
+<div class="card">
+<img class="card-img"
+src="C:\Users\kaval\Downloads\shtgun3.jpg" alt="Shot gun">
+<h2>Trogun</h2>
+<p class="price">$79.99</p>
+</div>
+</div>
+</body>
+</html>
